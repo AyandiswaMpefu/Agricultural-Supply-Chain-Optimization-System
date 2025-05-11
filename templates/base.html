@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural SCM - {% block title %}{% endblock %}</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -44,6 +51,18 @@
         </div>
     </nav>
 
+    <!-- Hero Video Section -->
+    <div class="hero-video-container position-relative">
+        <video autoplay muted loop class="w-100 h-100 object-fit-cover position-absolute top-0 start-0" style="z-index: -1;">
+            <source src="{{ url_for('static', filename='agriculture.mp4') }}" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-text text-center text-white py-5" style="position: relative; z-index: 1;">
+            <h1 class="display-5 fw-bold">Agricultural Supply Chain Optimization</h1>
+            <p class="lead">Connecting Farmers, Buyers, and Distributors Efficiently</p>
+        </div>
+    </div>
+
     <div class="container mt-4">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -61,10 +80,11 @@
 
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <div class="container">
-            <p>&copy; 2023 Agricultural Supply Chain Optimization</p>
+            <p>&copy; 2025 Agricultural Supply Chain Optimization</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

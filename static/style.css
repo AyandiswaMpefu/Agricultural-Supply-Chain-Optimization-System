@@ -1,18 +1,23 @@
+/* Google Font */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
 }
 
-.hero-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
+/* Video Hero Section */
+.hero-video-container {
+    height: 400px;
+    overflow: hidden;
     border-radius: 10px;
-    padding: 3rem;
     margin-bottom: 2rem;
+    position: relative;
 }
 
+.hero-text h1, .hero-text p {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Cards */
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -24,10 +29,12 @@ body {
     transform: translateY(-5px);
 }
 
+/* Navbar */
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Buttons */
 .btn-success {
     background-color: #28a745;
     border-color: #28a745;

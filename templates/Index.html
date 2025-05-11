@@ -3,9 +3,8 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="hero-section text-center py-5 bg-light">
-    <h1 class="display-4">Agricultural Supply Chain Optimization</h1>
-    <p class="lead">Streamlining agricultural production from farm to consumer</p>
+<div class="text-center py-5">
+    <h2 class="mb-4">Streamlining agricultural production from farm to consumer</h2>
     <div class="mt-4">
         {% if 'user_id' not in session %}
             <a href="{{ url_for('register') }}" class="btn btn-success btn-lg mx-2">Register Now</a>
